@@ -39,7 +39,7 @@
     	 {% if instance.image %}
 		  <img class="card-img-top" src="{{ instance.image.url }}" alt="Card image cap">
 		{% endif %}
-    	<div class="content-markdown">{{ instance.content }}  </div>
+    	<div class="post-detail-item">{{ instance.get_markdown }}  </div>
       
       </div>
     </div>

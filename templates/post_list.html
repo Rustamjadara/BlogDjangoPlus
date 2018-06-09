@@ -22,7 +22,7 @@
         <h5 class="card-title"><a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a></h5>
         <small><span class="badge badge-pill badge-success">Created:{{ obj.timestamp|timesince}} ago</span>
 			   <span class="badge badge-pill badge-warning">Updated:{{ obj.updated|timesince}} ago</span></small>
-    <p class="card-text">{{ obj.content|linebreaks|truncatechars:60 }}</p>
+    <p class="card-text post-detail-item">{{ obj.get_markdown|truncatechars:30 }}</p>
         <a href="{{ obj.get_absolute_url }}" class="btn btn-primary">View Post</a>
       </div>
     </div>

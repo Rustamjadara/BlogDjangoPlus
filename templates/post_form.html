@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+    {{ form.media }}
+
 <div class="card" style="width: 40rem;">
 <h2>Form</h2>
 <form method="POST" enctype="multipart/form-data">{% csrf_token %}
